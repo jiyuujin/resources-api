@@ -1,6 +1,10 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
+    <form method="post" action="http://localhost:9000/upload" enctype="multipart/form-data">
+      <input type="file" name="picture">
+      <input type="submit">
+    </form>
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
   </div>
 </template>
